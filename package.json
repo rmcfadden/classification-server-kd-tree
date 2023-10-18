@@ -1,10 +1,11 @@
 {
   "name": "classification-server-kd-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "postinstall": "npx tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
@@ -12,5 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.2.2"
-  }
+  },
+  "dependencies": {}
 }
