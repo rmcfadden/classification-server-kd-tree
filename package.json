@@ -14,5 +14,7 @@
   "devDependencies": {
     "typescript": "^5.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "classification-server": "../classification-server/"
+  }
 }
