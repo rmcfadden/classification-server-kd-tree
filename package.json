@@ -2,7 +2,13 @@
     "name": "classification-server-kd-tree",
     "version": "1.0.1",
     "description": "",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "files": [
+        "/dist"
+    ],
+    "exports": {
+        ".": "./dist/index.js"
+    },
     "type": "commonjs",
     "scripts": {
         "build": "npx tsc",
@@ -21,6 +27,6 @@
         "typescript": "^5.2.2"
     },
     "dependencies": {
-        "classification-server": "../classification-server/"
+        "classification-server": "github:rmcfadden/classification-server"
     }
 }
