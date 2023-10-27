@@ -1,4 +1,11 @@
-import { DataSet, PredictionResult, NDDataPointFeature, FeaturePredictionResult, NDDataPoint, ModelBase } from "classification-server/types";
+import {
+    DataSet,
+    PredictionResult,
+    NDDataPointFeature,
+    FeaturePredictionResult,
+    NDDataPoint,
+    ModelBase,
+} from "classification-server/types";
 import { NDDataPointConverter } from "classification-server/converters";
 
 export const KdTreeModel = (dataFeatures: NDDataPointFeature[]) => {
@@ -17,7 +24,6 @@ export const KdTreeModel = (dataFeatures: NDDataPointFeature[]) => {
             })),
         } as FeaturePredictionResult;
     };
-    const train = async (dataSet: DataSet) =>
-        KdTreeModel(dataSet.items as NDDataPointFeature[]);
+    const train = async (dataSet: DataSet) => KdTreeModel(dataSet.items as NDDataPointFeature[]);
     return { predict, train } as ModelBase;
-}
+};
