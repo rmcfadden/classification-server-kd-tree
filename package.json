@@ -27,6 +27,6 @@
         "typescript": "^5.2.2"
     },
     "dependencies": {
-        "classification-server": "github:rmcfadden/classification-server"
+        "classification-server": "https://github.com/rmcfadden/classification-server"
     }
 }
