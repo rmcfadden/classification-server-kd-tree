@@ -1,2 +1,2 @@
-export type { KDTreeClassifier } from "./kDTreeClassifier";
-export type { KdTreeModel } from "./kdTreeModel";
+export { KDTreeClassifier } from "./kDTreeClassifier";
+export { KdTreeModel } from "./kdTreeModel";
