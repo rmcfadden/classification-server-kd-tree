@@ -25,5 +25,5 @@ export const KdTreeModel = (dataFeatures: NDDataPointFeature[]) => {
         } as FeaturePredictionResult;
     };
     const train = async (dataSet: DataSet) => KdTreeModel(dataSet.items as NDDataPointFeature[]);
-    return { predict, train } as ModelBase;
+    return { predict, train, name: "nDDataPointFeature-KDTree" } as ModelBase;
 };

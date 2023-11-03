@@ -1,5 +1,10 @@
-import { ClassifyQuery, ClassifyDataSetQuery, FeatureClassifyResponse, FeaturePrediction, ClassifierBase } from "classification-server/types";
-
+import {
+    ClassifyQuery,
+    ClassifyDataSetQuery,
+    FeatureClassifyResponse,
+    FeaturePrediction,
+    ClassifierBase,
+} from "classification-server/types";
 
 export const KDTreeClassifier = () => {
     const classify = async (query: ClassifyQuery) => {
@@ -13,5 +18,5 @@ export const KDTreeClassifier = () => {
         //)) as FeatureClassifyResponse;
         return { predictions: [] as FeaturePrediction[] } as FeatureClassifyResponse;
     };
-    return { classify } as ClassifierBase;
+    return { classify, name: "nDDataPointFeature-KDTree" } as ClassifierBase;
 };
