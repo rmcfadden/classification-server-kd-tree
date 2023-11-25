@@ -1,8 +1,8 @@
 import {
     ClassifyQuery,
     ClassifyDataSetQuery,
-    FeatureClassifyResponse,
-    FeaturePrediction,
+    LabelClassifyResponse,
+    LabelPrediction,
     ClassifierBase,
 } from "classification-server/types";
 
@@ -11,12 +11,12 @@ export const KDTreeClassifier = () => {
         const { text } = query;
         const { dataSet } = query as ClassifyDataSetQuery;
         //const modelsFactory = ModelsFactory();
-        //const model = modelsFactory.create("dataPointFeature");
+        //const model = modelsFactory.create("dataPointLabel");
         //const predictionModel = await model.train(dataSet);
         //const { predictions } = (await predictionModel.predict(
         //  text
-        //)) as FeatureClassifyResponse;
-        return { predictions: [] as FeaturePrediction[] } as FeatureClassifyResponse;
+        //)) as LabelClassifyResponse;
+        return { predictions: [] as LabelPrediction[] } as LabelClassifyResponse;
     };
-    return { classify, name: "nDDataPointFeature-KDTree" } as ClassifierBase;
+    return { classify, name: "nDDataPointLabel-KDTree" } as ClassifierBase;
 };
