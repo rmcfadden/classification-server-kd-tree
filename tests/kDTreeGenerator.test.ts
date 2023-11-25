@@ -1,6 +1,6 @@
 import { NDDataPointLabel } from "classification-server/types";
 import { KDTreeGenerator } from "../src/kDTreeGenerator";
-import { KDTreeNode } from "../src/kdTreeNode";
+import { KDTreeNode } from "../src/kDTreeNode";
 test("generate simple", () => {
     const dataPoints: NDDataPointLabel[] = [
         { values: [0, 0], label: "meat" },

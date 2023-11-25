@@ -1,5 +1,5 @@
 import { NDDataPointLabel, LabelPredictionResult } from "classification-server/types";
-import { KdTreeModel } from "../src/kdTreeModel";
+import { KdTreeModel } from "../src/kDTreeModel";
 test("predict", async () => {
     const dataPoints: NDDataPointLabel[] = [
         { values: [0, 0], label: "fruit" },

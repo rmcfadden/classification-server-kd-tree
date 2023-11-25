@@ -1,5 +1,5 @@
 import { NDDataPointLabel } from "classification-server/types";
-import { KDTreeNode } from "./kdTreeNode";
+import { KDTreeNode } from "./kDTreeNode";
 export const KDTreeGenerator = () => {
     const generateLevel = (dataPoints: NDDataPointLabel[], level: number): KDTreeNode | undefined => {
         const { length } = dataPoints;
